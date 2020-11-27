@@ -8,6 +8,7 @@ Restuarant application which allows customers to add new burgers and devour them
 * Add a new burger to the database
 * Update a burger status via button click
 * Renders a list for each status only allowing customers to devour uneaten burgers
+* Ordered list will allow the customer to scroll once devoured burgers list is larger than 500px
 * Stores all data within a MYSQL database
 
 # Example

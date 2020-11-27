@@ -24,20 +24,23 @@ router.post("/api/burger", function(req, res){
 
 router.put("/api/burger/:id", function(req, res){
     var condition = "id = " + req.params.id;
+    console.log(req.body.devoured);
 
-    burger.update(
-        {
-            devoured: req.body.devoured
-        },
-        condition,
-        function(output) {
-            if (output.changedRows === 0) {
-                return res.status(404).end();
-            }
+    // burger.update(
+    //     {
+    //         devoured: req.body.devoured
+    //     },
+       
+
+    //     condition,
+    //     function(output) {
+    //         if (output.changedRows === 0) {
+    //             return res.status(404).end();
+    //         }
             res.status(200).end();
-        }
-    );
+        // }
+//     );
+// });
 });
-
 
 module.exports = router;
